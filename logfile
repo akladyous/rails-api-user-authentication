@@ -1,0 +1,41 @@
+2022-04-25 17:41:02.324 EDT [77785] LOG:  starting PostgreSQL 14.2 on x86_64-apple-darwin21.3.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.30), 64-bit
+2022-04-25 17:41:02.326 EDT [77785] LOG:  listening on IPv6 address "::1", port 5432
+2022-04-25 17:41:02.326 EDT [77785] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-04-25 17:41:02.326 EDT [77785] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-04-25 17:41:02.343 EDT [77786] LOG:  database system was shut down at 2022-04-25 17:40:54 EDT
+2022-04-25 17:41:02.352 EDT [77785] LOG:  database system is ready to accept connections
+2022-04-25 17:41:55.157 EDT [77907] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :user)" does not exist
+2022-04-25 17:42:19.906 EDT [77973] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :user)" does not exist
+2022-04-25 17:43:42.913 EDT [78052] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :user)" does not exist
+2022-04-25 17:45:11.859 EDT [78290] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :user)" does not exist
+2022-04-25 17:47:39.636 EDT [78736] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :user)" does not exist
+2022-04-25 17:48:07.893 EDT [78827] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :user)" does not exist
+2022-04-25 17:48:46.141 EDT [78926] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :username)" does not exist
+2022-04-25 17:49:54.067 EDT [79044] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :username).to_s" does not exist
+2022-04-25 17:52:00.569 EDT [79271] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :username)" does not exist
+2022-04-25 17:55:06.448 EDT [79696] FATAL:  role "Rails.application.credentials.dig(:POSTGRES, :username)" does not exist
+2022-04-25 17:56:59.916 EDT [80049] FATAL:  database "Rails.application.credentials.dig(:POSTGRES, :database)" does not exist
+2022-04-25 17:56:59.929 EDT [80050] ERROR:  syntax error at or near "." at character 32
+2022-04-25 17:56:59.929 EDT [80050] STATEMENT:  DROP DATABASE IF EXISTS "Rails"."application"
+2022-04-25 17:57:03.075 EDT [80082] ERROR:  syntax error at or near "." at character 24
+2022-04-25 17:57:03.075 EDT [80082] STATEMENT:  CREATE DATABASE "Rails"."application" ENCODING = 'unicode'
+2022-04-25 18:52:20.922 EDT [85257] ERROR:  database "job_tracker" already exists
+2022-04-25 18:52:20.922 EDT [85257] STATEMENT:  CREATE DATABASE "job_tracker" ENCODING = 'unicode'
+2022-04-25 21:33:17.112 EDT [88412] ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+2022-04-25 21:33:17.112 EDT [88412] DETAIL:  Key (email)=(user3@gmail.com) already exists.
+2022-04-25 21:33:17.112 EDT [88412] STATEMENT:  INSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
+2022-04-26 08:49:23.989 EDT [96464] ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+2022-04-26 08:49:23.989 EDT [96464] DETAIL:  Key (email)=(user2@gmail.com) already exists.
+2022-04-26 08:49:23.989 EDT [96464] STATEMENT:  INSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
+2022-04-26 08:56:25.928 EDT [96730] ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+2022-04-26 08:56:25.928 EDT [96730] DETAIL:  Key (email)=(user2@gmail.com) already exists.
+2022-04-26 08:56:25.928 EDT [96730] STATEMENT:  INSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
+2022-04-26 09:21:35.767 EDT [97888] ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+2022-04-26 09:21:35.767 EDT [97888] DETAIL:  Key (email)=(user2@gmail.com) already exists.
+2022-04-26 09:21:35.767 EDT [97888] STATEMENT:  INSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
+2022-04-26 09:26:27.866 EDT [97888] ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+2022-04-26 09:26:27.866 EDT [97888] DETAIL:  Key (email)=(user2@gmail.com) already exists.
+2022-04-26 09:26:27.866 EDT [97888] STATEMENT:  INSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
+2022-04-26 09:27:13.643 EDT [97888] ERROR:  duplicate key value violates unique constraint "index_users_on_email"
+2022-04-26 09:27:13.643 EDT [97888] DETAIL:  Key (email)=(user2@gmail.com) already exists.
+2022-04-26 09:27:13.643 EDT [97888] STATEMENT:  INSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
