@@ -39,3 +39,13 @@
 2022-04-26 09:27:13.643 EDT [97888] ERROR:  duplicate key value violates unique constraint "index_users_on_email"
 2022-04-26 09:27:13.643 EDT [97888] DETAIL:  Key (email)=(user2@gmail.com) already exists.
 2022-04-26 09:27:13.643 EDT [97888] STATEMENT:  INSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"
+2022-07-18 17:39:20.437 EDT [74643] LOG:  starting PostgreSQL 14.2 on x86_64-apple-darwin21.3.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.30), 64-bit
+2022-07-18 17:39:20.439 EDT [74643] LOG:  listening on IPv6 address "::1", port 5432
+2022-07-18 17:39:20.439 EDT [74643] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-07-18 17:39:20.440 EDT [74643] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-07-18 17:39:20.450 EDT [74646] LOG:  database system was shut down at 2022-07-15 10:59:26 EDT
+2022-07-18 17:39:20.466 EDT [74643] LOG:  database system is ready to accept connections
+2022-07-18 17:39:25.284 EDT [74678] FATAL:  database "job_tracker" does not exist
+2022-07-18 17:39:25.527 EDT [74680] FATAL:  database "job_tracker" does not exist
+2022-07-18 17:39:42.122 EDT [74719] FATAL:  database "job_tracker" does not exist
+2022-07-18 17:39:47.153 EDT [74746] FATAL:  database "job_tracker" does not exist
